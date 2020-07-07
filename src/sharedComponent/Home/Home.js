@@ -12,7 +12,7 @@ class HomeComponent extends Component {
     render() {
         return (
             <div>
-               <button onClick={this.changeEvent.bind(this)}>Add User</button>
+               <button onClick={this.changeEvent.bind(this)}>Switch User</button>
              
             </div>
         );
