@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import NavBar from '../../sharedComponent/NavComponent/NavComponent';
 
 class HomeComponent extends Component {
 
@@ -12,7 +12,8 @@ class HomeComponent extends Component {
     render() {
         return (
             <div>
-               <button onClick={this.changeEvent.bind(this)}>Switch User</button>
+                <NavBar/>
+                <button onClick={this.changeEvent.bind(this)}>Switch User</button>
              
             </div>
         );

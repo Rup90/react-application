@@ -1,21 +1,22 @@
 import React, { Component } from 'react';
 
-class RegistrationComponent extends Component {
+class ForgotPasswordComponent extends Component {
 
     constructor(props) {
         super(props);
     }
     changeEvent = () => {
-        this.props.history.push("/login");
+        this.props.history.push("/");
     }
     render() {
         return (
             <div>
-                <h1>Registration</h1>
+                <h1>Forgot Password</h1>
                 <button onClick={this.changeEvent.bind(this)}>Back</button>
             </div>
+            
         );
     }
 }
 
-export default RegistrationComponent;
+export default ForgotPasswordComponent;
