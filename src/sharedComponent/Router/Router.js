@@ -7,7 +7,7 @@ const Home = lazy(() => import('../../CommonComponents/Home/Home'));
 const Login = lazy(() => import('../../CommonComponents/LogIn/Login'));
 const Registration = lazy(() => import('../../CommonComponents/Registretion/Registration'));
 const ForgotPassword = lazy(() => import('../../CommonComponents/ForgotPassword/ForgotPassword'));
-
+const Dashboard = lazy(() => import('../../Components/Dashboard/Dashboard'));
 const RouterComponent = (
     <Router>
         <Suspense fallback={<div>Loading...</div>}>
@@ -17,6 +17,7 @@ const RouterComponent = (
                 <Route  exact path="/" component={Login} />
                 <Route path="/registration" component={Registration} />
                 <Route path="/forgot-password" component={ForgotPassword} />
+                <Route path="/dashboard" component={Dashboard} />
             </Switch>
         </Suspense>
     </Router>

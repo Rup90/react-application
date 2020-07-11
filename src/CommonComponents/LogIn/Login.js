@@ -42,7 +42,7 @@ class LoginComponent extends Component {
                             
                         </Col>
                         <Col sm="8">
-                            <Button variant="primary" type="submit">
+                            <Button variant="primary" type="submit" onClick={() => changeEvent('dashboard')}>
                                 Submit
                             </Button>
                             <span className="forgot-password">

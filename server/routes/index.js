@@ -17,10 +17,10 @@ Router.route('/userDetails')
     const resp = userResp.getUserResponse(req.body);
     let respObj = {
       status: 200,
-      userResp: []
+      userDetails: []
 
     };
-    if(resp.length > 0) respObj.userResp = resp;
+    if(resp.length > 0) respObj.userDetails = resp;
     res.json(respObj)
   });
 
