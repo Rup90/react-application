@@ -11,6 +11,7 @@ const bodyParser = require("body-parser");
 var app = express();
 
 app.use(express.static(__dirname + '/views/react-frontend'));
+app.use(cors());
 
 /*** CORS Configuration ***/
 // var whitelist = ['http://localhost:3000'];
