@@ -7,6 +7,7 @@
   --border: 1px solid #d5dbe0;
   --border-radious: 8px;
   --speed: 500ms;
+  --bg-light:#f5fbfc;
 }
 
 body {
@@ -16,7 +17,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--bg);
+  background-color: var(--bg-light);
 }
 
 code {

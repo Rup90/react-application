@@ -67,16 +67,16 @@ class RegistrationComponent extends Component {
                     </Form.Group>
 
                     <Form.Group as={Row}>
-                        <Col sm="4">
-                            
-                        </Col>
-                        <Col sm="8">
-                            <Button variant="primary" type="submit">
+                        <Col sm="12" className="text-center pt-3">
+                            <Button variant="primary" type="submit" className="btn-app-primary">
                                 Submit
                             </Button>
-                            <span className="back-prev">
+                            {/* <span className="back-prev">
                                 <a onClick={() => changeEvent()}>Back</a>
-                            </span>
+                            </span> */}
+                            <Button variant="primary" className="btn-app-outline ml-3" onClick={() => changeEvent()}>
+                                Back
+                            </Button>
                         </Col>
                     </Form.Group>
                 </Form>

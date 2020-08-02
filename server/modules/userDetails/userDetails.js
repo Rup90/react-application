@@ -8,6 +8,7 @@ class UserDetails {
     getUserResponse(obj) {
         const userCredens = userRespJson.userResp;
         const resp = userCredens.filter(e => {
+            console.log('obj',  obj);
             return (e.email === obj.email)
         });
         return resp;

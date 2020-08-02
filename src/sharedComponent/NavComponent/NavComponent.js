@@ -6,7 +6,7 @@ import './NavComponent.css';
 const NavigationBar = () => (
   <div>
     <Navbar expand="lg">
-      <Navbar.Brand  className="white-col">Welcome</Navbar.Brand>
+      <Navbar.Brand  className="white-col"><span className="bolder-font"> Welcome </span> Rupayan</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav"/>
       {/* <Form className="form-center">
         <FormControl type="text" placeholder="Search" className="" />

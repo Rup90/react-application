@@ -38,11 +38,8 @@ class LoginComponent extends Component {
                         </Col>
                     </Form.Group>
                     <Form.Group as={Row}>
-                        <Col sm="4">
-                            
-                        </Col>
-                        <Col sm="8">
-                            <Button variant="primary" type="submit" onClick={() => changeEvent('dashboard')}>
+                        <Col sm="12" className="text-center pt-3">
+                            <Button variant="primary" type="submit" onClick={() => changeEvent('dashboard')} className="btn-app-primary">
                                 Submit
                             </Button>
                             <span className="forgot-password">
@@ -51,7 +48,7 @@ class LoginComponent extends Component {
                         </Col>
                     </Form.Group>
                     <Form.Group as={Row}>
-                            <Col sm="4">
+                            <Col sm="12" className="font-13">
                                 <span className="registration">
                                    <a onClick={() => changeEvent('registration')}>New User ? Registration</a>
                                 </span>

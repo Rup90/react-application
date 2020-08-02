@@ -8,6 +8,7 @@ class Login {
     isValidUser(obj)  {
         const loginCredens = loginRespJson.loginCredentials;
         const resp = loginCredens.filter(res => {
+            console.log('obj---> login',obj);
             return ((res.email === obj.email) && (res.password === obj.password))
         });
         return resp;

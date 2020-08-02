@@ -1,11 +1,12 @@
 .navbar { 
-    background-color: rgb(78, 11, 11); 
+    /* background-color: rgb(78, 11, 11);  */
+    background-color: #55b9be;
 }
 .navbar, a, .navbar-nav, .navbar-light .nav-link {
-  color: rgb(36, 190, 106) !important;
+  color: #fff !important;
 }
 .navbar-brand {
-  font-size: 1.4em;
+  font-size: 1.em;
   color: #9FFFCB;
 }
 /* .form-center {
@@ -16,5 +17,9 @@
 } */
 
 .white-col {
-    color: antiquewhite !important;
+    color:#fff !important;
+}
+.bolder-font{
+  font-weight: 500;
+  font-size: 25px;
 }
