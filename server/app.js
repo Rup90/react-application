@@ -13,6 +13,8 @@ var app = express();
 app.use(express.static(__dirname + '/views/react-frontend'));
 app.use(cors());
 
+// global.jwtSecret = "react-poc-secret-key";
+
 /*** CORS Configuration ***/
 // var whitelist = ['http://localhost:3000'];
 // var corsOptions = {
