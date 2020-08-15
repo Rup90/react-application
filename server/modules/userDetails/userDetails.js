@@ -5,12 +5,13 @@ var userRespJson = require('../../response/userDetails.json');
 class UserDetails {
     constructor() {}
 
-    getUserResponse(obj) {
+    getUserResponse(email) {
         const userCredens = userRespJson.userResp;
         const resp = userCredens.filter(e => {
-            console.log('obj',  obj);
-            return (e.email === obj.email)
+            // console.log('obj',  obj);
+            return (e.email === email)
         });
+        console.log('resp', resp);
         return resp;
     }
     

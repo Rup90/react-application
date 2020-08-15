@@ -10,6 +10,8 @@ const bodyParser = require("body-parser");
 
 var app = express();
 
+require('./config/config.js');
+
 app.use(express.static(__dirname + '/views/react-frontend'));
 app.use(cors());
 

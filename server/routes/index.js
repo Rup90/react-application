@@ -3,6 +3,7 @@ const Router = express.Router();
 const Login = require('../modules/login/login');
 const UserDetails = require('../modules/userDetails/userDetails');
 const jwt =  require('jsonwebtoken');
+const { ensureJWTAuthentication } = require('../config/auth');
 
 /* GET home page. */
 Router.route('/users')
@@ -12,10 +13,11 @@ Router.route('/users')
   .post((req, res) => {});
 
 // Fetch User Details after successfull login
-Router.route('/userDetails')
-  .post((req, res) => {
+Router.get('/userDetails', ensureJWTAuthentication, (req, res) => {
+    var decodedUserData = req.decoded;
+    console.log('decodedUserData', decodedUserData);
     const userResp = new UserDetails();
-    const resp = userResp.getUserResponse(req.body);
+    const resp = userResp.getUserResponse(decodedUserData.email);
     let respObj = {
       status: 200,
       userDetails: []

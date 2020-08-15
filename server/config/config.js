@@ -1,0 +1,1 @@
+global.jwtSecret = "react-poc-secret-key";

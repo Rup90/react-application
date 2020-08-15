@@ -49,7 +49,6 @@ class LoginComponent extends Component {
                 //     response: userDetails[0]
                 // });
                 // console.log(this.state)
-                console.log('resp', resp);
                 if(resp.data.isValidUser){
                     localStorage.setItem('auth-data',resp.data.token);
                     this.setState({
