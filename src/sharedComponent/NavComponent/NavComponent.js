@@ -49,7 +49,7 @@ class NavigationBar extends Component {
           <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
             <Nav.Item><Nav.Link className="white-col" href="/">Home</Nav.Link></Nav.Item> 
-            <Nav.Item><Nav.Link  className="white-col" href="/about">Profile</Nav.Link></Nav.Item>
+            <Nav.Item><Nav.Link  className="white-col" href="/profile">Profile</Nav.Link></Nav.Item>
           </Nav>
           </Navbar.Collapse>
         </Navbar>

@@ -11,7 +11,7 @@ class UserDetails {
             // console.log('obj',  obj);
             return (e.email === email)
         });
-        console.log('resp', resp);
+        // console.log('resp', resp);
         return resp;
     }
     

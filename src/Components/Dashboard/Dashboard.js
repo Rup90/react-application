@@ -4,14 +4,13 @@ import Sidebar from '../../sharedComponent/NavComponent/NavComponent';
 import { getToken } from '../../helper';
 import './Dashboard.css';
 
+
 class Dashboard extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            //'email': 'rupayan.dey1990@gmail.com',
-            'response': '',
-            'userDeatilsText': ''
-        }
+            userdetails : {}
+            }
     }
 
     componentDidMount() {
@@ -65,7 +64,6 @@ class Dashboard extends Component {
 
                 </div>
             </div>
-
         );
     }
 }

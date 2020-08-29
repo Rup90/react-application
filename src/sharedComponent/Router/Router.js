@@ -8,6 +8,8 @@ const Login = lazy(() => import('../../CommonComponents/LogIn/Login'));
 const Registration = lazy(() => import('../../CommonComponents/Registretion/Registration'));
 const ForgotPassword = lazy(() => import('../../CommonComponents/ForgotPassword/ForgotPassword'));
 const Dashboard = lazy(() => import('../../Components/Dashboard/Dashboard'));
+const MyProfile = lazy(() => import('../../Components/MyProfile/MyProfile'));
+
 const RouterComponent = (
     <Router>
         <Suspense fallback={<div>Loading...</div>}>
@@ -18,6 +20,7 @@ const RouterComponent = (
                 <Route path="/registration" component={Registration} />
                 <Route path="/forgot-password" component={ForgotPassword} />
                 <Route path="/dashboard" component={Dashboard} />
+                <Route path="/profile" component={MyProfile} />                
             </Switch>
         </Suspense>
     </Router>
