@@ -51,6 +51,7 @@ class LoginComponent extends Component {
                 // console.log(this.state)
                 if(resp.data.isValidUser){
                     localStorage.setItem('auth-data',resp.data.token);
+                    localStorage.setItem('user-details',JSON.stringify(resp.data.userDetails));
                     this.setState({
                         redirect: '/dashboard'
             

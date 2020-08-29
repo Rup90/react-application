@@ -45,6 +45,7 @@ Router.route('/login')
       var payload = {id: userId, email: req.body.email};
       var token = jwt.sign(payload, jwtOptions.secretOrKey, {expiresIn: '10h'});
       respObj.token = token;
+      respObj.userDetails = payload;
     }
     res.json(respObj)
   });
