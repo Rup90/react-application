@@ -2,6 +2,7 @@ const express = require('express');
 const Router = express.Router();
 const Login = require('../modules/login/login');
 const UserDetails = require('../modules/userDetails/userDetails');
+const Registration = require('../modules/registration/registration');
 const jwt =  require('jsonwebtoken');
 const { ensureJWTAuthentication } = require('../config/auth');
 
@@ -50,4 +51,12 @@ Router.route('/login')
     res.json(respObj)
   });
 
+/***
+ * Route For User Registration
+ */
+Router.route('/register_user').post((req,res) => {
+  const registrationInstance = new Registration();
+  var resp = registrationInstance.doRegisterUser(req.body);
+  res.json(resp);
+});
 module.exports = Router;
