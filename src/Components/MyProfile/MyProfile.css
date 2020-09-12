@@ -1,4 +1,20 @@
 .profileFormContainer{
-    background-color: #fff;
+    /* background-color: #fff; */
     margin: 0 auto;
+}
+.whiteBg {
+    background-color: #fff;
+}
+.tempHeight{
+    height:500px;
+}
+.imgHolder{
+    height: 150px;
+    background-image: url('../../Assets/generic-profilePicture.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.profileFormContainer .form-group{
+    margin-bottom:0.1rem;
 }

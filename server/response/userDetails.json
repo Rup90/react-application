@@ -7,7 +7,7 @@
             "email": "rupayan.dey1990@gmail.com",
             "role": "Teacher",
             "specialization": "Computer",
-            "other Specialization": ["History", "Geography"],
+            "otherSpecialization": ["History", "Geography"],
             "avatar": "",
             "monthly_fees_min": "1000",
             "monthly_fees_max": "5000",
@@ -20,24 +20,25 @@
             "email": "gupta1.amrita@gmail.com",
             "role": "Teacher",
             "specialization": "Biology",
-            "other Specialization": ["Physics", "Mathematics"],
+            "otherSpecialization": ["Physics", "Mathematics"],
             "avatar": "",
             "monthly_fees_min": "1000",
             "monthly_fees_max": "5000",
             "isProfileUpdate": "false"
         },
         {
-            "firstName": "",
-            "lastName": "",
+            "firstName": "Anushka",
+            "lastName": "Roy",
             "userName": "Anushka",
             "email": "aroy29oct@gmail.com",
             "role": "Teacher",
             "specialization": "Computer",
-            "other Specialization": ["Physics", "Mathematics","Digital Electronics"],
+            "otherSpecialization": ["Physics", "Mathematics","Digital Electronics"],
             "avatar": "",
             "monthly_fees_min": "2000",
             "monthly_fees_max": "8000",
-            "isProfileUpdate": "false"
+            "isProfileUpdate": "false",
+            "experience":"5 yrs"
         }
 
 
